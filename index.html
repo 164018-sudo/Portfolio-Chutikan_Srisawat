@@ -25,7 +25,7 @@
             color: var(--text-dark);
         }
 
-        /* Bento Card ดีไซน์ใหม่ โทนเหลืองอุ่น */
+        /* Bento Card ดีไซน์โทนเหลืองอุ่น */
         .bento-yellow-card {
             background: #FFFFFF;
             border: 2px solid #FDE68A;
@@ -123,12 +123,12 @@
                           Chutikan Srisawat<br><span class="text-white">ลูกตาลพ</span>
                         </h2>
                         <p class="text-xs text-amber-950/80 font-medium max-w-lg leading-relaxed pt-1">
-                            รวบรวมผลงานการออกแบบและกิจกรรมทั้งหมด 10 หน้า
+                            รวบรวมผลงานการออกแบบและกิจกรรมทั้งหมด 11 หน้า
                         </p>
                     </div>
                 </div>
 
-                <!-- 📦 BENTO GRID (แสดงผลงานทั้งหมด 10 ชิ้น เรียงตามลำดับแบบไม่ซ้ำ) -->
+                <!-- 📦 BENTO GRID (แสดงผลงานทั้งหมด 11 ชิ้น การ์ดละ 1 หน้าไม่ซ้ำ) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="bento-grid">
                     <!-- Render ผ่าน JS -->
                 </div>
@@ -178,25 +178,26 @@
 
     <!-- 🛠️ JAVASCRIPT -->
     <script>
-        // รวมรูปภาพทั้ง 10 ชิ้น (images/2.jpg ถึง images/11.jpg)
+        // รวมรูปภาพทั้ง 11 ชิ้น (images/1.jpg ถึง images/11.jpg)
         const artworks = [
-            { img: "images/2.jpg", title: "ผลงานชิ้นที่ 01", desc: "" },
-            { img: "images/3.jpg", title: "ผลงานชิ้นที่ 02", desc: "" },
-            { img: "images/4.jpg", title: "ผลงานชิ้นที่ 03", desc: "" },
-            { img: "images/5.jpg", title: "ผลงานชิ้นที่ 04", desc: "" },
-            { img: "images/6.jpg", title: "ผลงานชิ้นที่ 05", desc: "" },
-            { img: "images/7.jpg", title: "ผลงานชิ้นที่ 06", desc: "" },
-            { img: "images/8.jpg", title: "ผลงานชิ้นที่ 07", desc: "" },
-            { img: "images/9.jpg", title: "ผลงานชิ้นที่ 08", desc: "" },
-            { img: "images/10.jpg", title: "ผลงานชิ้นที่ 09", desc: "" },
-            { img: "images/11.jpg", title: "ผลงานชิ้นที่ 10", desc: "" }
+            { img: "images/1.jpg", title: "01 | Statement of Purpose", desc: "" },
+            { img: "images/2.jpg", title: "ผลงานชิ้นที่ 02", desc: "" },
+            { img: "images/3.jpg", title: "ผลงานชิ้นที่ 03", desc: "" },
+            { img: "images/4.jpg", title: "ผลงานชิ้นที่ 04", desc: "" },
+            { img: "images/5.jpg", title: "ผลงานชิ้นที่ 05", desc: "" },
+            { img: "images/6.jpg", title: "ผลงานชิ้นที่ 06", desc: "" },
+            { img: "images/7.jpg", title: "ผลงานชิ้นที่ 07", desc: "" },
+            { img: "images/8.jpg", title: "ผลงานชิ้นที่ 08", desc: "" },
+            { img: "images/9.jpg", title: "ผลงานชิ้นที่ 09", desc: "" },
+            { img: "images/10.jpg", title: "ผลงานชิ้นที่ 10", desc: "" },
+            { img: "images/11.jpg", title: "ผลงานชิ้นที่ 11", desc: "" }
         ];
 
         function renderBento() {
             const grid = document.getElementById('bento-grid');
             let html = '';
 
-            // วนลูปแสดงผลงานทีละหน้าอย่างชัดเจน ไม่ซ้ำกัน
+            // วนลูปแสดงผลงานทั้งหมด 11 ชิ้นอย่างละ 1 การ์ด ไม่ซ้ำกัน
             artworks.forEach((data, index) => {
                 const displayNum = (index + 1).toString().padStart(2, '0');
 
@@ -211,7 +212,7 @@
                             <div class="w-full aspect-a4 bg-[#FEF9C3] rounded-xl overflow-hidden border border-amber-200 flex flex-col items-center justify-center p-3 relative text-center mb-3">
                                 <img src="${data.img}" alt="${data.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
                                 <span class="text-2xl mb-1 text-amber-500">📄</span>
-                                <p class="text-amber-900 font-bold text-xs">ชิ้นที่ ${index + 1}</p>
+                                <p class="text-amber-900 font-bold text-xs">ชิ้นที่ ${displayNum}</p>
                                 <p class="text-amber-700/60 text-[10px]">ไฟล์: ${data.img} (A4)</p>
                             </div>
 
