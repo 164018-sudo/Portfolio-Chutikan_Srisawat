@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESIGN ARCHIVE // PORTFOLIO 2026</title>
+    <title>SUNSHINE BENTO ARCHIVE // PORTFOLIO 2026</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font (Prompt) -->
@@ -13,27 +13,30 @@
     
     <style>
         :root {
-            --cobalt: #1D4ED8;       /* สีน้ำเงินโคบอลต์ ทรงพลัง โมเดิร์น */
-            --cobalt-light: #EFF6FF; /* สีฟ้าพาสเทลอ่อน */
-            --slate-bg: #F8FAFC;    /* พื้นหลังเทาสว่างแบบสวิส */
+            --yellow-accent: #F59E0B;     /* สีเหลืองน้ำผึ้งสดใสเด่นชัด */
+            --yellow-hover: #D97706;      /* สีเหลืองส้มเมื่อวางเมาส์ */
+            --yellow-light: #FEF3C7;      /* สีเหลืองพาสเทลอ่อน */
+            --bg-cream: #FFFCF2;          /* พื้นหลังสีครีมเนยสบายตา */
+            --text-dark: #1F2937;         /* สีเทาชาโคลสำหรับตัวหนังสือ */
         }
         body { 
             font-family: 'Prompt', sans-serif; 
-            background-color: var(--slate-bg);
-            color: #0F172A;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
         }
 
-        /* Bento Card ดีไซน์ใหม่ ขอบเรียบหรูสไตล์ Swiss Minimalist */
-        .bento-card {
+        /* Bento Card ดีไซน์ใหม่ โทนเหลืองอุ่น มนสวยน่ารัก */
+        .bento-yellow-card {
             background: #FFFFFF;
-            border: 1px solid #E2E8F0;
+            border: 2px solid #FDE68A;
             border-radius: 24px;
             transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
             overflow: hidden;
+            box-shadow: 0 10px 20px -5px rgba(245, 158, 11, 0.08);
         }
-        .bento-card:hover {
-            border-color: var(--cobalt);
-            box-shadow: 0 20px 30px -10px rgba(29, 78, 216, 0.15);
+        .bento-yellow-card:hover {
+            border-color: var(--yellow-accent);
+            box-shadow: 0 20px 30px -10px rgba(245, 158, 11, 0.2);
             transform: translateY(-4px);
         }
 
@@ -43,67 +46,67 @@
         }
     </style>
 </head>
-<body class="antialiased selection:bg-blue-600 selection:text-white">
+<body class="antialiased selection:bg-amber-400 selection:text-amber-950">
 
-    <!-- 🏛️ Layout แบบ Split-Screen (แบ่งซ้าย-ขวา ชัดเจน) -->
+    <!-- 🌻 Layout Split-Screen (แบ่งฝั่งซ้าย-ขวา ไม่เหมือนเว็บทั่วไป) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
-            <!-- ================= ฝั่งซ้าย: STICKY SIDEBAR (โปรไฟล์ส่วนตัว) ================= -->
+            <!-- ================= ฝั่งซ้าย: STICKY SIDEBAR (โปรไฟล์ส่วนตัวสีเหลืองสดใส) ================= -->
             <aside class="lg:col-span-4 lg:sticky lg:top-8 space-y-6">
                 
                 <!-- การ์ดโปรไฟล์หลัก -->
-                <div class="bento-card p-6 bg-white border border-slate-200 space-y-6">
+                <div class="bento-yellow-card p-6 bg-white space-y-6">
                     <!-- โลโก้รหัสยื่น -->
                     <div class="flex justify-between items-center">
-                        <span class="text-xs font-extrabold tracking-widest text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-                            CANDIDATE #03
+                        <span class="text-xs font-black tracking-wider text-amber-900 bg-amber-200 px-3 py-1 rounded-full border border-amber-300">
+                            🌼 PORTFOLIO CANDIDATE
                         </span>
-                        <span class="text-xs text-slate-400 font-bold">SU 2026</span>
+                        <span class="text-xs text-amber-700/70 font-bold">2026</span>
                     </div>
 
                     <!-- รูปโปรไฟล์ขนาด A4 -->
-                    <div class="w-full aspect-a4 bg-slate-100 rounded-2xl overflow-hidden relative border border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                    <div class="w-full aspect-a4 bg-[#FEF9C3] rounded-2xl overflow-hidden relative border-2 border-dashed border-amber-300 flex flex-col items-center justify-center p-4 text-center">
                         <img src="images/profile.jpg" alt="Profile" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
                         
-                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-2 font-bold">👤</div>
-                        <p class="text-slate-800 font-bold text-xs">รูปโปรไฟล์ของคุณ</p>
-                        <p class="text-slate-400 text-[10px] mt-1">images/profile.jpg (สัดส่วน A4)</p>
+                        <div class="w-12 h-12 bg-amber-200 text-amber-800 rounded-full flex items-center justify-center mb-2 text-xl font-bold">✨</div>
+                        <p class="text-amber-950 font-bold text-xs">รูปโปรไฟล์ของคุณ</p>
+                        <p class="text-amber-800/60 text-[10px] mt-1">images/profile.jpg (สัดส่วน A4)</p>
                     </div>
 
                     <!-- ชื่อและ Bio สั้นๆ -->
                     <div class="space-y-2">
-                        <h1 class="text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                        <h1 class="text-2xl font-extrabold text-amber-950 tracking-tight leading-snug">
                             [ชื่อ-นามสกุล ของคุณ]
                         </h1>
-                        <p class="text-xs text-blue-700 font-semibold tracking-wide">
-                            CREATIVE & DESIGN APPLICANT
+                        <p class="text-xs text-amber-700 font-bold tracking-wide">
+                            CREATIVE & DESIGN CANDIDATE
                         </p>
-                        <p class="text-xs text-slate-500 leading-relaxed pt-2 border-t border-slate-100">
-                            มุ่งมั่นนำเสนอทักษะการคิดเชิงวิเคราะห์และการสร้างสรรค์งานทัศนศิลป์ เพื่อเข้าศึกษาต่อในมหาวิทยาลัยศิลปากร
+                        <p class="text-xs text-gray-600 leading-relaxed pt-2 border-t border-amber-100">
+                            สวัสดีค่ะ! หนูมุ่งมั่นถ่ายทอดความคิดสร้างสรรค์และรอยยิ้มผ่านผลงานดีไซน์ มุ่งสู่การเรียนรู้สิ่งใหม่ๆ ในระดับอุดมศึกษาค่ะ
                         </p>
                     </div>
 
                     <!-- ข้อมูลส่วนตัว / ประวัติการศึกษา -->
                     <div class="space-y-2 pt-2 text-xs">
-                        <div class="flex justify-between py-1.5 border-b border-slate-100">
-                            <span class="text-slate-400 font-medium">โรงเรียน</span>
-                            <span class="font-semibold text-slate-800">........................</span>
+                        <div class="flex justify-between py-1.5 border-b border-amber-100">
+                            <span class="text-gray-500 font-medium">โรงเรียน</span>
+                            <span class="font-semibold text-gray-800">........................</span>
                         </div>
-                        <div class="flex justify-between py-1.5 border-b border-slate-100">
-                            <span class="text-slate-400 font-medium">แผนการเรียน</span>
-                            <span class="font-semibold text-slate-800">ศิลป์ / วิทย์</span>
+                        <div class="flex justify-between py-1.5 border-b border-amber-100">
+                            <span class="text-gray-500 font-medium">แผนการเรียน</span>
+                            <span class="font-semibold text-gray-800">ศิลป์ / วิทย์</span>
                         </div>
                         <div class="flex justify-between py-1.5">
-                            <span class="text-slate-400 font-medium">เกรดเฉลี่ย (GPAX)</span>
-                            <span class="font-bold text-blue-700">X.XX</span>
+                            <span class="text-gray-500 font-medium">เกรดเฉลี่ย (GPAX)</span>
+                            <span class="font-bold text-amber-600">X.XX</span>
                         </div>
                     </div>
 
                     <!-- ปุ่มติดต่อด้านล่าง Sidebar -->
                     <div class="pt-2 space-y-2">
-                        <a href="#contact" class="block w-full text-center bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs py-3 rounded-xl transition shadow-md shadow-blue-200">
-                            📞 ช่องทางติดต่อกลับ
+                        <a href="#contact" class="block w-full text-center bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-xs py-3.5 rounded-xl transition shadow-md shadow-amber-200">
+                            💌 ติดต่อและพูดคุยกับหนู
                         </a>
                     </div>
                 </div>
@@ -111,54 +114,54 @@
             </aside>
 
 
-            <!-- ================= ฝั่งขวา: MAIN BENTO FEED (รวมผลงาน 11 ชิ้น) ================= -->
+            <!-- ================= ฝั่งขวา: MAIN BENTO FEED (ผลงาน 11 ชิ้น สีเหลืองสดใส) ================= -->
             <main class="lg:col-span-8 space-y-8">
                 
-                <!-- Header สไตล์ Swiss Typography -->
-                <div class="bento-card p-8 bg-blue-700 text-white relative overflow-hidden">
-                    <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-blue-600 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
-                    <div class="relative z-10 space-y-3">
-                        <span class="text-xs font-bold tracking-widest text-blue-200 uppercase">PORTFOLIO COLLECTION</span>
-                        <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-tight">
-                            SELECTED WORKS <br><span class="text-blue-200">2024 — 2026</span>
+                <!-- Header ต้อนรับสไตล์ขี้เล่น สดใส -->
+                <div class="bento-yellow-card p-8 bg-amber-400 text-amber-950 relative overflow-hidden border-none shadow-lg shadow-amber-200/50">
+                    <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-amber-300 rounded-full blur-2xl opacity-60 pointer-events-none"></div>
+                    <div class="relative z-10 space-y-2">
+                        <span class="text-xs font-extrabold tracking-widest bg-white/80 text-amber-950 px-3 py-1 rounded-full uppercase">MY CREATIVE GALLERY</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight pt-1">
+                            SELECTED WORKS <br><span class="text-white">A4 COLLECTION</span>
                         </h2>
-                        <p class="text-xs text-blue-100 font-light max-w-lg leading-relaxed">
-                            รวมรวบผลงานการออกแบบ ภาพวาด กิจกรรม และใบประกาศนียบัตรจำนวน 11 ชิ้น ในขนาดกระดาษ A4 มาตรฐาน
+                        <p class="text-xs text-amber-950/80 font-medium max-w-lg leading-relaxed pt-1">
+                            รวบรวมผลงานการออกแบบ ภาพวาด กิจกรรม และใบประกาศนียบัตรจำนวน 11 ชิ้น ในสัดส่วนกระดาษ A4 มาตรฐาน
                         </p>
                     </div>
                 </div>
 
                 <!-- 🌟 HERO FEATURED WORK (ผลงานชิ้นที่ 1 ขยายใหญ่โดดเด่น) -->
-                <div class="bento-card p-6 bg-white border border-slate-200" id="hero-work">
+                <div class="bento-yellow-card p-6 bg-white" id="hero-work">
                     <!-- Render ชิ้นที่ 1 ผ่าน JS -->
                 </div>
 
-                <!-- 📦 BENTO GRID (ผลงานชิ้นที่ 2 ถึง 11 เรียงแบบตารางคู่) -->
+                <!-- 📦 BENTO GRID (ผลงานชิ้นที่ 2 ถึง 11 เรียงเป็นกล่องคู่) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="bento-grid">
                     <!-- Render ชิ้นที่ 2-11 ผ่าน JS -->
                 </div>
 
-                <!-- 📞 SECTION CONTACT (ช่องทางติดต่อแบบการ์ดมินิมอล) -->
-                <div id="contact" class="bento-card p-8 bg-slate-900 text-white space-y-6">
+                <!-- 📞 SECTION CONTACT (ช่องทางติดต่อการ์ดสีเหลืองนวล) -->
+                <div id="contact" class="bento-yellow-card p-8 bg-amber-950 text-white space-y-6 border-none shadow-xl">
                     <div class="space-y-1">
-                        <h3 class="text-xl font-bold tracking-tight">CONTACT INFORMATION</h3>
-                        <p class="text-xs text-slate-400">ช่องทางการติดต่อสำหรับคณะกรรมการ</p>
+                        <h3 class="text-xl font-bold tracking-tight text-amber-300">CONTACT CHANNELS</h3>
+                        <p class="text-xs text-amber-200/70">ช่องทางการติดต่อสำหรับอาจารย์และกรรมการค่ะ</p>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
-                        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700/50">
-                            <p class="text-blue-400 font-bold mb-1">PHONE</p>
-                            <p class="text-slate-200">08X-XXX-XXXX</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-semibold">
+                        <div class="p-4 bg-amber-900/60 rounded-xl border border-amber-800/80">
+                            <p class="text-amber-400 font-bold mb-1">PHONE</p>
+                            <p class="text-amber-100">08X-XXX-XXXX</p>
                         </div>
-                        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700/50">
-                            <p class="text-blue-400 font-bold mb-1">EMAIL</p>
-                            <p class="text-slate-200">your@email.com</p>
+                        <div class="p-4 bg-amber-900/60 rounded-xl border border-amber-800/80">
+                            <p class="text-amber-400 font-bold mb-1">EMAIL</p>
+                            <p class="text-amber-100">your@email.com</p>
                         </div>
-                        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700/50">
-                            <p class="text-blue-400 font-bold mb-1">INSTAGRAM</p>
-                            <p class="text-slate-200">@your.ig.name</p>
+                        <div class="p-4 bg-amber-900/60 rounded-xl border border-amber-800/80">
+                            <p class="text-amber-400 font-bold mb-1">INSTAGRAM</p>
+                            <p class="text-amber-100">@your.ig.name</p>
                         </div>
                     </div>
-                    <p class="text-[10px] text-slate-500 text-center pt-2">© 2026 Candidate Portfolio. Prepared for Silpakorn University Admission.</p>
+                    <p class="text-[10px] text-amber-400/60 text-center pt-2">© 2026 Candidate Portfolio. Prepared for University Admission.</p>
                 </div>
 
             </main>
@@ -166,68 +169,68 @@
         </div>
     </div>
 
-    <!-- 🛑 LIGHTBOX MODAL (ป๊อปอัปดูรูป A4 ใหญ่เต็มจอ) -->
-    <div id="art-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md transition-opacity duration-300 opacity-0" onclick="closeModal()">
-        <button class="absolute top-6 right-6 bg-white text-slate-900 hover:bg-slate-100 w-12 h-12 rounded-full text-xl shadow-xl flex items-center justify-center font-bold" onclick="closeModal()">✕</button>
+    <!-- 🛑 LIGHTBOX MODAL (ป๊อปอัปส่องดูรูป A4 ใหญ่เต็มตา) -->
+    <div id="art-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-amber-950/80 backdrop-blur-md transition-opacity duration-300 opacity-0" onclick="closeModal()">
+        <button class="absolute top-6 right-6 bg-white text-amber-900 hover:bg-amber-100 w-12 h-12 rounded-full text-xl shadow-xl flex items-center justify-center font-bold border-2 border-amber-300" onclick="closeModal()">✕</button>
         
-        <div class="bg-white rounded-3xl p-5 max-w-md w-full shadow-2xl border border-slate-200 flex flex-col items-center" onclick="event.stopPropagation()">
-            <div class="w-full aspect-a4 overflow-hidden rounded-2xl bg-slate-100 flex items-center justify-center border border-slate-200">
+        <div class="bg-white rounded-3xl p-5 max-w-md w-full shadow-2xl border-4 border-amber-300 flex flex-col items-center" onclick="event.stopPropagation()">
+            <div class="w-full aspect-a4 overflow-hidden rounded-2xl bg-[#FEF9C3] flex items-center justify-center border border-amber-200">
                 <img id="modal-img" src="" alt="Zoom Image" class="w-full h-full object-contain">
             </div>
             <div class="p-4 text-center w-full">
-                <h3 id="modal-title" class="text-lg font-bold text-slate-900"></h3>
-                <p id="modal-desc" class="text-xs text-slate-500 mt-1.5"></p>
+                <h3 id="modal-title" class="text-lg font-bold text-amber-950"></h3>
+                <p id="modal-desc" class="text-xs text-gray-600 mt-1.5"></p>
             </div>
         </div>
     </div>
 
-    <!-- 🛠️ JAVASCRIPT สำหรับเรนเดอร์โครงสร้าง Bento Layout -->
+    <!-- 🛠️ JAVASCRIPT สำหรับเรนเดอร์ Bento Layout ธีมเหลือง -->
     <script>
         const artworks = [
-            { title: "01 | HERO PROJECT / FEATURED WORK", desc: "ผลงานชิ้นเอกที่โดดเด่นที่สุด แสดงทักษะความถนัดเชิงสร้างสรรค์หลัก" },
-            { title: "02 | VISUAL DESIGN & COMPOSITION", desc: "การจัดองค์ประกอบภาพ ค่าน้ำหนัก และทฤษฎีสี" },
-            { title: "03 | FINE ART & SKETCHING", desc: "ทักษะการวาดภาพลายเส้น หุ่นนิ่ง และการสื่ออารมณ์" },
-            { title: "04 | DIGITAL MEDIA & GRAPHICS", desc: "งานออกแบบกราฟิกผ่านโปรแกรมคอมพิวเตอร์ดิจิทัล" },
-            { title: "05 | ACADEMIC WORKSHOP", desc: "การเข้าร่วมค่ายวิชาการและการอบรมเชิงปฏิบัติการ" },
-            { title: "06 | VOLUNTEER & COMMUNITY", desc: "กิจกรรมบำเพ็ญประโยชน์ งานจิตอาสาพัฒนาโรงเรียน" },
-            { title: "07 | CREATIVE PHOTOGRAPHY", desc: "ภาพถ่ายมุมมองสร้างสรรค์ สัดส่วนแนวตั้ง A4" },
-            { title: "08 | INTEGRATED PROJECT", desc: "โครงงานบูรณาการองค์ความรู้และทักษะเฉพาะทาง" },
-            { title: "09 | PRODUCT & CONCEPT DESIGN", desc: "การออกแบบแนวคิดบรรจุภัณฑ์และโมเดลสินค้า" },
-            { title: "10 | LEADERSHIP & ACTIVITIES", desc: "บทบาทผู้นำ การทำงานร่วมกับผู้อื่นในกิจกรรมโรงเรียน" },
-            { title: "11 | CERTIFICATES & TRAINING", desc: "ประกาศนียบัตรหลักสูตรพัฒนาตนเองเพิ่มเติม" }
+            { title: "01 | HERO PROJECT / ผลงานเด่น", desc: "ชิ้นงานสร้างสรรค์ไฮไลต์ที่ภูมิใจเสนอ แสดงตัวตนและความตั้งใจหลัก" },
+            { title: "02 | VISUAL & GRAPHIC DESIGN", desc: "การจัดองค์ประกอบภาพ ทฤษฎีสี และทักษะการใช้โปรแกรมคอมพิวเตอร์" },
+            { title: "03 | FINE ART & DRAWING", desc: "ทักษะงานวาดเส้น ดรออิ้ง การใช้สีน้ำ หรือสีสื่อผสม" },
+            { title: "04 | DIGITAL ILLUSTRATION", desc: "ภาพวาดดิจิทัลกราฟิก งานดีไซน์ตัวละคร หรือสติ๊กเกอร์" },
+            { title: "05 | ACADEMIC WORKSHOP", desc: "การอบรม การเข้าร่วมค่ายวิชาการเพื่อพัฒนาทักษะเฉพาะด้าน" },
+            { title: "06 | VOLUNTEER & COMMUNITY", desc: "กิจกรรมบำเพ็ญประโยชน์ จิตอาสา และการช่วยเหลือโรงเรียน" },
+            { title: "07 | CREATIVE PHOTOGRAPHY", desc: "ภาพถ่ายแนวตั้ง A4 เล่าเรื่องราวผ่านมุมมองสายตา" },
+            { title: "08 | INTEGRATED PROJECT", desc: "โครงงานการบูรณาการความรู้ความสนใจเข้ากับผลงานจริง" },
+            { title: "09 | PRODUCT & CONCEPT DESIGN", desc: "ไอเดียการออกแบบผลิตภัณฑ์ ดีไซน์โลโก้ หรือบรรจุภัณฑ์" },
+            { title: "10 | LEADERSHIP & ACTIVITIES", desc: "บทบาทการเป็นผู้นำ สภานักเรียน หรือการทำงานเป็นทีม" },
+            { title: "11 | CERTIFICATES & TRAINING", desc: "เกียรติบัตรการเข้าร่วมกิจกรรมและการเรียนรู้ออนไลน์เพิ่มเติม" }
         ];
 
         function renderBento() {
-            // 1. เรนเดอร์ชิ้นงานที่ 1 (Hero Card ใหญ่ด้านบน)
+            // 1. เรนเดอร์ชิ้นงานที่ 1 (Hero Card ใหญ่สีเหลืองสดใส)
             const heroWork = artworks[0];
             const heroImgUrl = `images/1.jpg`;
             document.getElementById('hero-work').innerHTML = `
                 <div class="cursor-pointer" onclick="openModal('${heroImgUrl}', '${heroWork.title}', '${heroWork.desc}')">
                     <div class="flex justify-between items-center mb-4">
-                        <span class="text-xs font-black text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">FEATURED ITEM</span>
-                        <span class="text-xs font-bold text-slate-400">01 / 11</span>
+                        <span class="text-xs font-extrabold text-amber-900 bg-amber-200 px-3 py-1 rounded-full border border-amber-300">⭐ FEATURED WORK</span>
+                        <span class="text-xs font-bold text-amber-800">ชิ้นที่ 01 / 11</span>
                     </div>
                     <div class="grid md:grid-cols-12 gap-6 items-center">
                         <div class="md:col-span-6">
-                            <div class="w-full aspect-a4 bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 flex flex-col items-center justify-center p-4 relative text-center">
+                            <div class="w-full aspect-a4 bg-[#FEF9C3] rounded-2xl overflow-hidden border border-amber-200 flex flex-col items-center justify-center p-4 relative text-center">
                                 <img src="${heroImgUrl}" alt="${heroWork.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
-                                <span class="text-3xl mb-1 text-blue-600">📄</span>
-                                <p class="text-slate-700 font-bold text-xs">ผลงานชิ้นที่ 1</p>
-                                <p class="text-slate-400 text-[10px] mt-1">images/1.jpg (A4)</p>
+                                <span class="text-3xl mb-1 text-amber-500">📄</span>
+                                <p class="text-amber-900 font-bold text-xs">ผลงานชิ้นที่ 1</p>
+                                <p class="text-amber-700/60 text-[10px] mt-1">images/1.jpg (A4)</p>
                             </div>
                         </div>
                         <div class="md:col-span-6 space-y-3">
-                            <h3 class="text-xl font-extrabold text-slate-900 leading-snug">${heroWork.title}</h3>
-                            <p class="text-xs text-slate-500 leading-relaxed">${heroWork.desc}</p>
+                            <h3 class="text-xl font-extrabold text-amber-950 leading-snug">${heroWork.title}</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed">${heroWork.desc}</p>
                             <div class="pt-2">
-                                <span class="inline-block bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold px-4 py-2 rounded-xl transition">🔍 กดซูมภาพเต็มจอ</span>
+                                <span class="inline-block bg-amber-400 hover:bg-amber-500 text-amber-950 text-xs font-bold px-4 py-2.5 rounded-xl transition border border-amber-300 shadow-sm">🔍 คลิกเพื่อซูมดูรูปใหญ่ A4</span>
                             </div>
                         </div>
                     </div>
                 </div>
             `;
 
-            // 2. เรนเดอร์ชิ้นงานที่ 2 ถึง 11 (Bento Grid คู่)
+            // 2. เรนเดอร์ชิ้นงานที่ 2 ถึง 11 (Bento Grid)
             const grid = document.getElementById('bento-grid');
             let html = '';
 
@@ -236,26 +239,26 @@
                 const imgUrl = `images/${i}.jpg`;
 
                 html += `
-                    <div class="bento-card p-5 cursor-pointer flex flex-col justify-between" onclick="openModal('${imgUrl}', '${data.title}', '${data.desc}')">
+                    <div class="bento-yellow-card p-5 cursor-pointer flex flex-col justify-between" onclick="openModal('${imgUrl}', '${data.title}', '${data.desc}')">
                         <div>
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">WORK NO.</span>
-                                <span class="text-xs font-black text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-100">${i.toString().padStart(2, '0')}</span>
+                                <span class="text-[10px] font-bold text-amber-800/60 uppercase tracking-wider">WORK NO.</span>
+                                <span class="text-xs font-black text-amber-950 bg-amber-200 px-2.5 py-0.5 rounded-md border border-amber-300">${i.toString().padStart(2, '0')}</span>
                             </div>
                             
-                            <div class="w-full aspect-a4 bg-slate-100 rounded-xl overflow-hidden border border-slate-200 flex flex-col items-center justify-center p-3 relative text-center mb-3">
+                            <div class="w-full aspect-a4 bg-[#FEF9C3] rounded-xl overflow-hidden border border-amber-200 flex flex-col items-center justify-center p-3 relative text-center mb-3">
                                 <img src="${imgUrl}" alt="${data.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
-                                <span class="text-2xl mb-1 text-slate-400">📄</span>
-                                <p class="text-slate-600 font-bold text-xs">ชิ้นที่ ${i}</p>
-                                <p class="text-slate-400 text-[10px]">ไฟล์: ${i}.jpg (A4)</p>
+                                <span class="text-2xl mb-1 text-amber-500">📄</span>
+                                <p class="text-amber-900 font-bold text-xs">ชิ้นที่ ${i}</p>
+                                <p class="text-amber-700/60 text-[10px]">ไฟล์: ${i}.jpg (A4)</p>
                             </div>
 
-                            <h3 class="font-bold text-slate-900 text-xs leading-snug">${data.title}</h3>
-                            <p class="text-slate-500 text-[11px] mt-1 line-clamp-2 leading-relaxed">${data.desc}</p>
+                            <h3 class="font-bold text-amber-950 text-xs leading-snug">${data.title}</h3>
+                            <p class="text-gray-500 text-[11px] mt-1 line-clamp-2 leading-relaxed">${data.desc}</p>
                         </div>
                         
-                        <div class="pt-3 mt-3 border-t border-slate-100 text-right">
-                            <span class="text-[10px] text-blue-700 font-bold">VIEW A4 DETAILS →</span>
+                        <div class="pt-3 mt-3 border-t border-amber-100 text-right">
+                            <span class="text-[10px] text-amber-800 font-bold">ดูรายละเอียด A4 →</span>
                         </div>
                     </div>
                 `;
@@ -284,7 +287,6 @@
         function closeModal() {
             modal.classList.remove('opacity-100');
             setTimeout(() => {
-                modal.classList.hidden = true;
                 modal.classList.add('hidden');
             }, 300);
             document.body.style.overflow = '';
