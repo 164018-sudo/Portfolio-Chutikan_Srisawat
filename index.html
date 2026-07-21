@@ -25,7 +25,7 @@
             color: var(--text-dark);
         }
 
-        /* Bento Card ดีไซน์ใหม่ โทนเหลืองอุ่น มนสวยน่ารัก */
+        /* Bento Card ดีไซน์ใหม่ โทนเหลืองอุ่น */
         .bento-yellow-card {
             background: #FFFFFF;
             border: 2px solid #FDE68A;
@@ -48,16 +48,15 @@
 </head>
 <body class="antialiased selection:bg-amber-400 selection:text-amber-950">
 
-    <!-- 🌻 Layout Split-Screen (แบ่งฝั่งซ้าย-ขวา ไม่เหมือนเว็บทั่วไป) -->
+    <!-- 🌻 Layout Split-Screen -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
-            <!-- ================= ฝั่งซ้าย: STICKY SIDEBAR (โปรไฟล์ส่วนตัวสีเหลืองสดใส) ================= -->
+            <!-- ================= ฝั่งซ้าย: STICKY SIDEBAR ================= -->
             <aside class="lg:col-span-4 lg:sticky lg:top-8 space-y-6">
                 
                 <!-- การ์ดโปรไฟล์หลัก -->
                 <div class="bento-yellow-card p-6 bg-white space-y-6">
-                    <!-- โลโก้รหัสยื่น -->
                     <div class="flex justify-between items-center">
                         <span class="text-xs font-black tracking-wider text-amber-900 bg-amber-200 px-3 py-1 rounded-full border border-amber-300">
                             🌼 PORTFOLIO
@@ -65,13 +64,11 @@
                         <span class="text-xs text-amber-700/70 font-bold">2026</span>
                     </div>
 
-                    <!-- รูปโปรไฟล์ขนาด A4 -->
+                    <!-- รูปโปรไฟล์ -->
                     <div class="w-full aspect-a4 bg-[#FEF9C3] rounded-2xl overflow-hidden relative border-2 border-dashed border-amber-300 flex flex-col items-center justify-center p-4 text-center">
                         <img src="images/12.jpg" alt="Profile" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
-                        
                         <div class="w-12 h-12 bg-amber-200 text-amber-800 rounded-full flex items-center justify-center mb-2 text-xl font-bold">✨</div>
                         <p class="text-amber-950 font-bold text-xs">รูปโปรไฟล์ลูกยัยโอ๋</p>
-                      
                     </div>
 
                     <!-- ชื่อและ Bio สั้นๆ -->
@@ -106,7 +103,7 @@
                     <!-- ปุ่มติดต่อด้านล่าง Sidebar -->
                     <div class="pt-2 space-y-2">
                         <a href="#contact" class="block w-full text-center bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-xs py-3.5 rounded-xl transition shadow-md shadow-amber-200">
-                            💌Contact ติดต่อและพูดคุย
+                            💌 Contact ติดต่อและพูดคุย
                         </a>
                     </div>
                 </div>
@@ -114,10 +111,10 @@
             </aside>
 
 
-            <!-- ================= ฝั่งขวา: MAIN BENTO FEED (ผลงาน 11 ชิ้น สีเหลืองสดใส) ================= -->
+            <!-- ================= ฝั่งขวา: MAIN BENTO FEED ================= -->
             <main class="lg:col-span-8 space-y-8">
                 
-                <!-- Header ต้อนรับสไตล์ขี้เล่น สดใส -->
+                <!-- Header ต้อนรับ -->
                 <div class="bento-yellow-card p-8 bg-amber-400 text-amber-950 relative overflow-hidden border-none shadow-lg shadow-amber-200/50">
                     <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-amber-300 rounded-full blur-2xl opacity-60 pointer-events-none"></div>
                     <div class="relative z-10 space-y-2">
@@ -126,22 +123,17 @@
                           Chutikan Srisawat<br><span class="text-white">ลูกตาลพ</span>
                         </h2>
                         <p class="text-xs text-amber-950/80 font-medium max-w-lg leading-relaxed pt-1">
-                            รวบรวมผล...
+                            รวบรวมผลงานการออกแบบและกิจกรรมทั้งหมด 10 หน้า
                         </p>
                     </div>
                 </div>
 
-                <!-- 🌟 HERO FEATURED WORK (ผลงานชิ้นที่ 1 ขยายใหญ่โดดเด่น) -->
-                <div class="bento-yellow-card p-6 bg-white" id="hero-work">
-                    <!-- Render ชิ้นที่ 1 ผ่าน JS -->
-                </div>
-
-                <!-- 📦 BENTO GRID (ผลงานชิ้นที่ 2 ถึง 11 เรียงเป็นกล่องคู่) -->
+                <!-- 📦 BENTO GRID (แสดงผลงานทั้งหมด 10 ชิ้น เรียงตามลำดับแบบไม่ซ้ำ) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="bento-grid">
-                    <!-- Render ชิ้นที่ 2-11 ผ่าน JS -->
+                    <!-- Render ผ่าน JS -->
                 </div>
 
-                <!-- 📞 SECTION CONTACT (ช่องทางติดต่อการ์ดสีเหลืองนวล) -->
+                <!-- 📞 SECTION CONTACT -->
                 <div id="contact" class="bento-yellow-card p-8 bg-amber-950 text-white space-y-6 border-none shadow-xl">
                     <div class="space-y-1">
                         <h3 class="text-xl font-bold tracking-tight text-amber-300">CONTACT CHANNELS</h3>
@@ -169,7 +161,7 @@
         </div>
     </div>
 
-    <!-- 🛑 LIGHTBOX MODAL (ป๊อปอัปส่องดูรูป A4 ใหญ่เต็มตา) -->
+    <!-- 🛑 LIGHTBOX MODAL -->
     <div id="art-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-amber-950/80 backdrop-blur-md transition-opacity duration-300 opacity-0" onclick="closeModal()">
         <button class="absolute top-6 right-6 bg-white text-amber-900 hover:bg-amber-100 w-12 h-12 rounded-full text-xl shadow-xl flex items-center justify-center font-bold border-2 border-amber-300" onclick="closeModal()">✕</button>
         
@@ -184,73 +176,43 @@
         </div>
     </div>
 
-    <!-- 🛠️ JAVASCRIPT สำหรับเรนเดอร์ Bento Layout ธีมเหลือง -->
+    <!-- 🛠️ JAVASCRIPT -->
     <script>
+        // รวมรูปภาพทั้ง 10 ชิ้น (images/2.jpg ถึง images/11.jpg)
         const artworks = [
-            { title: "01 | ", desc: "" },
-            { title: "02 | ", desc: "" },
-            { title: "03 | ", desc: "" },
-            { title: "04 | ", desc: "" },
-            { title: "05 | ", desc: "" },
-            { title: "06 | ", desc: "" },
-            { title: "07 | ", desc: "" },
-            { title: "08 | ", desc: "" },
-            { title: "09 | ", desc: "" },
-            { title: "10 | ", desc: "" },
-            { title: "11 | ", desc: "" }
+            { img: "images/2.jpg", title: "ผลงานชิ้นที่ 01", desc: "" },
+            { img: "images/3.jpg", title: "ผลงานชิ้นที่ 02", desc: "" },
+            { img: "images/4.jpg", title: "ผลงานชิ้นที่ 03", desc: "" },
+            { img: "images/5.jpg", title: "ผลงานชิ้นที่ 04", desc: "" },
+            { img: "images/6.jpg", title: "ผลงานชิ้นที่ 05", desc: "" },
+            { img: "images/7.jpg", title: "ผลงานชิ้นที่ 06", desc: "" },
+            { img: "images/8.jpg", title: "ผลงานชิ้นที่ 07", desc: "" },
+            { img: "images/9.jpg", title: "ผลงานชิ้นที่ 08", desc: "" },
+            { img: "images/10.jpg", title: "ผลงานชิ้นที่ 09", desc: "" },
+            { img: "images/11.jpg", title: "ผลงานชิ้นที่ 10", desc: "" }
         ];
 
         function renderBento() {
-            // 1. เรนเดอร์ชิ้นงานที่ 1 (Hero Card ใหญ่สีเหลืองสดใส)
-            const heroWork = artworks[0];
-            const heroImgUrl = `images/1.jpg`;
-            document.getElementById('hero-work').innerHTML = `
-                <div class="cursor-pointer" onclick="openModal('${heroImgUrl}', '${heroWork.title}', '${heroWork.desc}')">
-                    <div class="flex justify-between items-center mb-4">
-                        <span class="text-xs font-extrabold text-amber-900 bg-amber-200 px-3 py-1 rounded-full border border-amber-300">⭐ FEATURED WORK</span>
-                        <span class="text-xs font-bold text-amber-800">ชิ้นที่ 01 / 11</span>
-                    </div>
-                    <div class="grid md:grid-cols-12 gap-6 items-center">
-                        <div class="md:col-span-6">
-                            <div class="w-full aspect-a4 bg-[#FEF9C3] rounded-2xl overflow-hidden border border-amber-200 flex flex-col items-center justify-center p-4 relative text-center">
-                                <img src="${heroImgUrl}" alt="${heroWork.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
-                                <span class="text-3xl mb-1 text-amber-500">📄</span>
-                                <p class="text-amber-900 font-bold text-xs">ผลงานชิ้นที่ 1</p>
-                                <p class="text-amber-700/60 text-[10px] mt-1">images/1.jpg (A4)</p>
-                            </div>
-                        </div>
-                        <div class="md:col-span-6 space-y-3">
-                            <h3 class="text-xl font-extrabold text-amber-950 leading-snug">${heroWork.title}</h3>
-                            <p class="text-xs text-gray-600 leading-relaxed">${heroWork.desc}</p>
-                            <div class="pt-2">
-                                <span class="inline-block bg-amber-400 hover:bg-amber-500 text-amber-950 text-xs font-bold px-4 py-2.5 rounded-xl transition border border-amber-300 shadow-sm">🔍 คลิกเพื่อซูมดูรูปใหญ่ A4</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            // 2. เรนเดอร์ชิ้นงานที่ 2 ถึง 11 (Bento Grid)
             const grid = document.getElementById('bento-grid');
             let html = '';
 
-            for (let i = 1; i < 11; i++) {
-                const data = artworks[i-1];
-                const imgUrl = `images/${i}.jpg`;
+            // วนลูปแสดงผลงานทีละหน้าอย่างชัดเจน ไม่ซ้ำกัน
+            artworks.forEach((data, index) => {
+                const displayNum = (index + 1).toString().padStart(2, '0');
 
                 html += `
-                    <div class="bento-yellow-card p-5 cursor-pointer flex flex-col justify-between" onclick="openModal('${imgUrl}', '${data.title}', '${data.desc}')">
+                    <div class="bento-yellow-card p-5 cursor-pointer flex flex-col justify-between" onclick="openModal('${data.img}', '${data.title}', '${data.desc}')">
                         <div>
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-[10px] font-bold text-amber-800/60 uppercase tracking-wider">WORK NO.</span>
-                                <span class="text-xs font-black text-amber-950 bg-amber-200 px-2.5 py-0.5 rounded-md border border-amber-300">${i.toString().padStart(2, '0')}</span>
+                                <span class="text-xs font-black text-amber-950 bg-amber-200 px-2.5 py-0.5 rounded-md border border-amber-300">${displayNum}</span>
                             </div>
                             
                             <div class="w-full aspect-a4 bg-[#FEF9C3] rounded-xl overflow-hidden border border-amber-200 flex flex-col items-center justify-center p-3 relative text-center mb-3">
-                                <img src="${imgUrl}" alt="${data.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
+                                <img src="${data.img}" alt="${data.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
                                 <span class="text-2xl mb-1 text-amber-500">📄</span>
-                                <p class="text-amber-900 font-bold text-xs">ชิ้นที่ ${i}</p>
-                                <p class="text-amber-700/60 text-[10px]">ไฟล์: ${i}.jpg (A4)</p>
+                                <p class="text-amber-900 font-bold text-xs">ชิ้นที่ ${index + 1}</p>
+                                <p class="text-amber-700/60 text-[10px]">ไฟล์: ${data.img} (A4)</p>
                             </div>
 
                             <h3 class="font-bold text-amber-950 text-xs leading-snug">${data.title}</h3>
@@ -262,7 +224,8 @@
                         </div>
                     </div>
                 `;
-            }
+            });
+
             grid.innerHTML = html;
         }
 
